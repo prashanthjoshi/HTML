@@ -2,6 +2,22 @@
 <!-- specifies the html version by default html5-->
 <html lang="en">
 <head>
+    <!-- <style></style> defines style information for the webpage and should appear before meta tags-->
+    <style>
+        footer{
+            display: flex; justify-content: center;
+        }
+        tfoot{
+            text-align: center;
+        }
+        table, tr, td, th{
+            border-style: double;
+            border-collapse: separate;
+        }
+        caption{
+           font-weight: bold;
+        }
+    </style> 
     <meta charset="UTF-8">
     <!-- charset specifies character encoding for HTML5 website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +27,6 @@
     <!-- http equiv specifies that content related to page must be loaded from self source, we can add other sources as well -->
     <title>HTML5 Summary</title>
     <!-- tilte tag defines the title to be displayed on browser tab -->
-    <!-- <style></style> defines style information for the webpage -->
     <!-- <link></link> Defines a link to other documents -->
     <!-- <script></script> Defines JavaScript and other script related code or file -->
 </head>
@@ -19,7 +34,28 @@
     <!-- body tag contains actual webpage content like text, images and audios -->
     <!-- Hello World! -->
     <!-- html tags are case insensitive but best practice is to use lowercase -->
-    <h1>HTML5 Summary and Best Practices</h1>
+    <header>
+        <h1>HTML5 Summary and Best Practices</h1>
+        <!-- <nav>
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+        </nav> -->
+        <!-- nav tag is for navigational content of the webpage like nav maenu items. -->
+    </header>
+    <!-- header tag is to specify logo, title and nav bar content of the website. 1 per page-->
+
+    <!-- <main>
+        <section>
+            <article>
+                
+            </article>
+            The <article> element is used to include self-contained composition on a web page.
+        </section>
+        section element is used to organize webpage into different sections
+        <aside></aside>
+        The <aside> element is used to include content related to the main content of the web page.
+    </main> -->
+
     <p>
         <ul>
             <li>DOCTYPE specifies the html version by default html5</li>
@@ -30,9 +66,10 @@
             <li>Script tag defines JavaScript and other script related code or file</li>
         </ul>
     </p>
+
     <p>
         <table>
-            <caption style="font-weight: bold;">Type of Elements</caption>
+            <caption>Type of Elements</caption>
             <thead>
                 <tr>
                     <th>Block Element</th>
@@ -51,14 +88,13 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="2" style="text-align: center;">
+                    <td colspan="2">
                         This is a tfoot tag and is optional!
                     </td>
                 </tr>
             </tfoot>
         </table>
     </p>
-    <p>
         <h3>Attributes</h3>
         <ul>
             <li>Html tags can have various additional properties called attributes.</li>
@@ -68,5 +104,29 @@
             <li>use double quotes "" on attribute values as they might not work as intended if contained any special chars.</li>
         </ul>
     </p>
+    <p>
+        <h3>Some of the widely used sectioning elements in HTML are:</h3>
+        <ol>
+            <li>header -> nav</li>
+            <li>main -> Section -> article</li>
+            <li>aside</li>
+            <li>footer</li>
+        </ol>
+    </p>
+    <address>
+        Address:
+        John
+        #231A
+        Palace Lane
+        Bangalor
+    </address> 
+
+    <footer>
+        <p>
+            Copyright &copy; Prashanth Joshi, 2023
+        </p>
+        <!-- The <address> element helps to semantically organize address details in HTML content. -->
+    </footer>
+    <!-- footer tag is to specify copyright, about us and T&C of a page. 1 per page. -->
 </body>
 </html>
