@@ -14,7 +14,7 @@
             border-style: double;
             border-collapse: separate;
         }
-        caption{
+        caption, dt{
            font-weight: bold;
         }
     </style> 
@@ -68,7 +68,7 @@
     </p>
 
     <p>
-        <table>
+        <table id="bookmark">
             <caption>Type of Elements</caption>
             <thead>
                 <tr>
@@ -113,6 +113,93 @@
             <li>footer</li>
         </ol>
     </p>
+    <p>
+        <h3>Grouping Elements</h3>
+        <li>paragraph Element</li>
+        <li>Division Element</li>
+        <li>List Element</li>
+        <li>Quotation & Citation Element</li>
+    </p>
+    <p>
+        <ul>
+            <li>Unordered Item 1</li>
+            <li>Unordered Item 2</li>
+            <li>Unordered Item 3</li>
+        </ul>
+        <ol>
+            <li>Ordered Item 1</li>
+            <li>Ordered Item 2</li>
+            <li>Ordered Item 3</li>
+        </ol>
+        <dl>
+            <dt>Description Term 1</dt>
+            <dd>Description Definition 1</dd>
+            <dt>Description Term 2</dt>
+            <dd>Description Definition 2</dd>
+            <dt>Description Term 3</dt>
+            <dd>Description Definition 3</dd>
+        </dl>
+    </p>
+    <blockquote cite="https://owasp.org/">
+        The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software.
+    </blockquote>
+    <!-- Quotation element is defined using <blockquote>...</blockquote> tag. -->
+    <p>
+        Hyperlinks are used to link different webpage or individual HTML files. 
+        
+    </p>
+    <div>
+        <h4>Types of hyperlinks</h4>
+        <ol>
+            <li><a href="https://github.com/prashanthjoshi/HTML/blob/cb63cad01df8930db99f2116a14af59bd91ab745/HTML%20Semantic%20Layout.PNG" target="_top">Text Hyperlink</a></li>
+            <li><a href="https://www.google.com/"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google (Image Hyperlink)" target="_parent"></a></li>
+            <li><a href="#bookmark" target="_blank">Bookmark Hyperlink</a></li>
+            <li><a href="mailto:prashanthjoshi999@gmail.com" target="_self">Mail Author</a></li>
+            <li><a href="tel:1234567890" rel="noopener">Call Author</a></li>
+        </ol>
+        
+<!-- The possible value of "target"
+
+_blank  -> Opens a web page in a new window or tab
+
+_self -> Opens a web page in the same window (default)
+
+_parent -> Opens a web page in the parent frame
+
+_top -> Opens a web page in the full body of the window
+
+frame-name -> Opens a web page in a named frame -->
+<div>
+    <p>
+        * The noopener keyword for the rel attribute of the &lt;a&gt;, &lt;area&gt;, and &lt;form&gt; elements instructs the browser to 
+        navigate to the target resource without granting the new browsing context access to the document that opened it — 
+        by not setting the Window.opener property on the opened window (it returns null).
+    </p>
+    <p>
+        * The noreferrer keyword to omit the Referer header and otherwise leak no referrer information — 
+        and additionally to behave as if the noopener keyword were also specified.
+    </p>
+</div>
+<div>
+    * Following are the character Entity Examples
+    <ol>
+        <li>&copy;</li>
+        <li>&amp;</li>
+        <li>&lt;&gt;</li>
+        <li>&reg;&euro;&pound;</li>
+    </ol>
+</div>
+<div>
+    <p>Gloabal Attributes</p>
+    <p contenteditable="true">This is editable</p>
+    <p contenteditable="true" dir="rtl">The direction of the text is from right to left</p>
+    <p title="Demo Title">Hover your mouse here to see the title</p>
+    <p id="id1">ID should be unique for each element</p>
+</div>
+
+
+
+    </div>
     <address>
         Address:
         John
