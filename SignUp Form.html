@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #buttons{
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+</head>
+<body>
+    <h1 style="text-align:center">Sign Up for HTML5 Summary</h1>
+    <form name="SignUp" action="./HTML5 Summary.html" method="get">
+        <!-- Name attribute is used by scripting language to access form data.
+        Action specid=fies the server side program that will be executed when the form is submitted.
+        Method specifies http request method that will be used to submit form data to server-side program. -->
+
+        <!-- <input type="text" value="name"> -->
+        <!-- Type specifies the type of element and ranges from text, email, range, url to date pickers. -->
+        <!-- value specifies the elements value that will be sent to server program. -->
+        
+        <table style="margin: auto;">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="firstname">Enter First Name:</label>
+                        <!-- Label element is used to associate a text label with a form input field. -->
+                        <!-- For attribute of label can point to "id" of input control. This ensures cursor focuses on the respective input control on the click of the label. -->
+                    </td>
+                    <td><input type="text" name="firstname" id="firstname" placeholder="FirstName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Enter Last Name:</label></td>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="LastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Enter Email address:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tel">Enter phone number:</label></td>
+                    <td><input type="tel" name="tel" id="tel" placeholder="Telephone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Enter Date of Birth:</label></td>
+                    <td><input type="date" name="dob" id="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender" required>Select Gender:</label></td>
+                    <td><input type="radio" name="gender" id="gender">Male
+                        <input type="radio" name="gender" id="gender">Female
+                        <input type="radio" name="gender" id="gender">Not Specified</td>
+                </tr>
+                <tr>
+                    <td><label for="OC" required>Origin Country:</label> </td>
+                    <td><input list="countries" id="OC" placeholder="Origin Country">
+                        <datalist id="countries">
+                            <option value="India">
+                                <option value="France">
+                                    <option value="Singapore">
+                                        <option value="Thailand">
+                                            <option value="United Arab Emirates">
+                                                <option value="United States of America">
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="state">Select Residing State:</label></td>
+                    <td><select name="state" id="state" required>
+                        <option value="" selected disabled>Please Choose a state</option>
+                        <option value="KR">Karnataka</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="AP">Andra Pradesh</option>
+                        <option value="OT">Others</option>
+                    </select></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div id="buttons">
+            <button type="submit">Submit</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button>
+        </div>
+        
+        
+    </form>
+</body>
+</html>

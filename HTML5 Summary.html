@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<!-- specifies the html version by default html5-->
+<html lang="en">
+<head>
+    <!-- <style></style> defines style information for the webpage and should appear before meta tags-->
+    <style>
+        footer{
+            display: flex; justify-content: center;
+        }
+        tfoot{
+            text-align: center;
+        }
+        table, tr, td, th{
+            border-style: double;
+            border-collapse: separate;
+        }
+        caption, dt{
+           font-weight: bold;
+        }
+    </style> 
+    <meta charset="UTF-8">
+    <!-- charset specifies character encoding for HTML5 website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page provides a brief summary on HTML5 tags and elements">
+    <!-- meta tag is not visible on browser but machine readable and provides info related page, set viewport and author details. -->
+    <meta http-equiv="content-security-policy" content="default-src 'self'">
+    <!-- http equiv specifies that content related to page must be loaded from self source, we can add other sources as well -->
+    <title>HTML5 Summary</title>
+    <!-- tilte tag defines the title to be displayed on browser tab -->
+    <!-- <link></link> Defines a link to other documents -->
+    <!-- <script></script> Defines JavaScript and other script related code or file -->
+</head>
+<body>
+    <!-- body tag contains actual webpage content like text, images and audios -->
+    <!-- Hello World! -->
+    <!-- html tags are case insensitive but best practice is to use lowercase -->
+    <header>
+        <h1>HTML5 Summary and Best Practices</h1>
+        <!-- <nav>
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+        </nav> -->
+        <!-- nav tag is for navigational content of the webpage like nav maenu items. -->
+    </header>
+    <!-- header tag is to specify logo, title and nav bar content of the website. 1 per page-->
+
+    <!-- <main>
+        <section>
+            <article>
+                
+            </article>
+            The <article> element is used to include self-contained composition on a web page.
+        </section>
+        section element is used to organize webpage into different sections
+        <aside></aside>
+        The <aside> element is used to include content related to the main content of the web page.
+    </main> -->
+
+    <p>
+        <ul>
+            <li>DOCTYPE specifies the html version by default html5</li>
+            <li>Meta tag is not visible on browser but machine readable and provides info related page, set viewport and author details.</li>
+            <li>Tilte tag defines the title to be displayed on browser tab</li>
+            <li>Style tag defines style information for the webpage</li>
+            <li>Link tag defines a link to other documents</li>
+            <li>Script tag defines JavaScript and other script related code or file</li>
+        </ul>
+    </p>
+
+    <p>
+        <table id="bookmark">
+            <caption>Type of Elements</caption>
+            <thead>
+                <tr>
+                    <th>Block Element</th>
+                    <th>Inline Element</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Starts on a new line</td>
+                    <td>Starts on a same line (if space is available)</td>
+                </tr>
+                <tr>
+                    <td>Ex: heading tags(h1 - h6), form, div and p tags</td>
+                    <td>Ex: span, a (anchor tag), and img tags</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        This is a tfoot tag and is optional!
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+        <h3>Attributes</h3>
+        <ul>
+            <li>Html tags can have various additional properties called attributes.</li>
+            <li>Some attributes like name and value are common to most of the elements and can be classified as global attributes.</li>
+            <li>Attributes are set only in start tag of elements.</li>
+            <li>Best practice is to use lower case.</li>
+            <li>use double quotes "" on attribute values as they might not work as intended if contained any special chars.</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Some of the widely used sectioning elements in HTML are:</h3>
+        <ol>
+            <li>header -> nav</li>
+            <li>main -> Section -> article</li>
+            <li>aside</li>
+            <li>footer</li>
+        </ol>
+    </p>
+    <p>
+        <h3>Grouping Elements</h3>
+        <li>paragraph Element</li>
+        <li>Division Element</li>
+        <li>List Element</li>
+        <li>Quotation & Citation Element</li>
+    </p>
+    <p>
+        <ul>
+            <li>Unordered Item 1</li>
+            <li>Unordered Item 2</li>
+            <li>Unordered Item 3</li>
+        </ul>
+        <ol>
+            <li>Ordered Item 1</li>
+            <li>Ordered Item 2</li>
+            <li>Ordered Item 3</li>
+        </ol>
+        <dl>
+            <dt>Description Term 1</dt>
+            <dd>Description Definition 1</dd>
+            <dt>Description Term 2</dt>
+            <dd>Description Definition 2</dd>
+            <dt>Description Term 3</dt>
+            <dd>Description Definition 3</dd>
+        </dl>
+    </p>
+    <blockquote cite="https://owasp.org/">
+        The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software.
+    </blockquote>
+    <!-- Quotation element is defined using <blockquote>...</blockquote> tag. -->
+    <p>
+        Hyperlinks are used to link different webpage or individual HTML files. 
+        
+    </p>
+    <div>
+        <h4>Types of hyperlinks</h4>
+        <ol>
+            <li><a href="https://github.com/prashanthjoshi/HTML/blob/cb63cad01df8930db99f2116a14af59bd91ab745/HTML%20Semantic%20Layout.PNG" target="_top">Text Hyperlink</a></li>
+            <li><a href="https://www.google.com/"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google (Image Hyperlink)" target="_parent"></a></li>
+            <li><a href="#bookmark" target="myIFrame">Bookmark Hyperlink</a></li>
+            <li><a href="mailto:prashanthjoshi999@gmail.com" target="_self">Mail Author</a></li>
+            <li><a href="tel:1234567890" rel="noopener">Call Author</a></li>
+        </ol>
+        
+<!-- The possible value of "target"
+
+_blank  -> Opens a web page in a new window or tab
+
+_self -> Opens a web page in the same window (default)
+
+_parent -> Opens a web page in the parent frame
+
+_top -> Opens a web page in the full body of the window
+
+frame-name -> Opens a web page in a named frame -->
+<div>
+    <p>
+        * The noopener keyword for the rel attribute of the &lt;a&gt;, &lt;area&gt;, and &lt;form&gt; elements instructs the browser to 
+        navigate to the target resource without granting the new browsing context access to the document that opened it — 
+        by not setting the Window.opener property on the opened window (it returns null).
+    </p>
+    <p>
+        * The noreferrer keyword to omit the Referer header and otherwise leak no referrer information — 
+        and additionally to behave as if the noopener keyword were also specified.
+    </p>
+</div>
+<div>
+    * Following are the character Entity Examples
+    <ol>
+        <li>&copy;</li>
+        <li>&amp;</li>
+        <li>&lt;&gt;</li>
+        <li>&reg;&euro;&pound;</li>
+    </ol>
+</div>
+<div>
+    <p>Gloabal Attributes</p>
+    <p contenteditable="true">This is editable</p>
+    <p contenteditable="true" dir="rtl">The direction of the text is from right to left</p>
+    <p title="Demo Title">Hover your mouse here to see the title</p>
+    <p id="id1">ID should be unique for each element</p>
+</div>
+<figure>
+    <img src="./HTML Semantic Layout.PNG" alt="HTML Semantics" width="400px" height="400px">
+    <figcaption>Figure of HTML Semantics</figcaption>
+</figure><br><br>
+<!-- <audio>
+    <source src="myaudio.ogg" type="audio/ogg">
+    <source src="myaudio.mp3" type="audio/mp3">
+ </audio> This is a best practice to mention source tags inside Media element tags, so that best suited source by browser is picked.--> 
+ <p>
+    The requirements to include documents, videos, interactive videos, or even other web content into a web page directly from external sources.
+    This requirement is fulfilled by iframe tag.
+ </p>
+ <!-- Sandbox Attribute
+This attribute helps the developer to apply extra restrictions for the content which can be embedded into the iframe element. -->
+
+ <iframe name="myIFrame" width="400px" height="400px" sandbox="allow-same-origin allow-forms"></iframe>
+ <!-- giving no value to sandbox attribute enables all restrictons. otherwise to allow particular restriction need to mention as above-->
+    <address>
+        Address:
+        John
+        #231A
+        Palace Lane
+        Bangalore
+    </address> 
+
+    <div>
+        <h4>Common Vulnerabilities in HTML practice that needs to be mitigated:</h4>
+        <ol>
+            <li>
+                HTNL Injection
+                Mitigation -> use of InnerText instead of InnerHTML, code sanitation by removing illegal characters, output encoding by converting special chars in I/O to char entities.
+            </li> 
+            <li>Clickjacking</li>
+            <li>HTML5 attributes and events vulnerabilities</li>
+            <li>Web Storage Vulnerability</li>
+            <li>Reverse Tabnabbing</li>
+        </ol>                                                        
+    </div><hr>
+
+    <footer>
+        <p>
+            Copyright &copy; Prashanth Joshi, 2023
+        </p>
+        <!-- The <address> element helps to semantically organize address details in HTML content. -->
+    </footer>
+    <!-- footer tag is to specify copyright, about us and T&C of a page. 1 per page. -->
+</body>
+</html>
+
+<!-- The following are some best practices to be followed while developing a web page or an application using HTML5.
+
+1.In the application, ensure that each web page is having proper document structure with divisions such as <head>, <body>, <header>, <footer>.
+
+2.Ensure that correct DOCTYPE is declared, which is required for the browser to understand the standards of the application used to render it properly.
+
+3.Use a meaningful title for the web pages.
+
+4.Always close the tag even if it is not a container tag.
+
+5.Avoid Inline styles and embedded scripts. Try to include script and style with external files keeping your HTML code clean and neat.
+
+6.Include the script as an external file and place this code at the end portion of the <body> tag.
+
+7.Add the lang attribute to the root element, and keep the value as short as possible.
+
+8.Even though HTML is case insensitive, using lowercase for code is the best practice.
+
+9.Use the most appropriate HTML tag for sectioning the web page. Try to avoid the generic <div> tag and use more meaningful tags such as <article>, <section> and appropriate tags in the web pages.
+
+10.Always use <ul> for designing navigation bars.
+
+11.Avoid the use of the 'type' attribute in the HTML list element and use the corresponding CSS property list-style-type property instead.
+
+12.On embedding elements to the web page, use the alt attribute with a proper description text.
+
+13.Indent nested elements properly.
+
+14.Use appropriate type attribute for Input element inside forms, also ensure the form control is wrapped with <label> element.
+
+15.Use a sandbox attribute along with the iframe element whenever it is needed to embed another webpage into the application.
+
+16.Use rel attribute with a value "noopener  noreferrer" along with hyperlink, to avoid reverse tabnabbing.
+
+17.Consider all the input data as untrusted information and sanitize those inputs before it is used in some logic in the application.
+
+18.Do proper output encoding to avoid chances of injection of malicious code to the application through input elements. -->
