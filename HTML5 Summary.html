@@ -153,7 +153,7 @@
         <ol>
             <li><a href="https://github.com/prashanthjoshi/HTML/blob/cb63cad01df8930db99f2116a14af59bd91ab745/HTML%20Semantic%20Layout.PNG" target="_top">Text Hyperlink</a></li>
             <li><a href="https://www.google.com/"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google (Image Hyperlink)" target="_parent"></a></li>
-            <li><a href="#bookmark" target="_blank">Bookmark Hyperlink</a></li>
+            <li><a href="#bookmark" target="myIFrame">Bookmark Hyperlink</a></li>
             <li><a href="mailto:prashanthjoshi999@gmail.com" target="_self">Mail Author</a></li>
             <li><a href="tel:1234567890" rel="noopener">Call Author</a></li>
         </ol>
@@ -196,17 +196,44 @@ frame-name -> Opens a web page in a named frame -->
     <p title="Demo Title">Hover your mouse here to see the title</p>
     <p id="id1">ID should be unique for each element</p>
 </div>
+<figure>
+    <img src="./HTML Semantic Layout.PNG" alt="HTML Semantics" width="400px" height="400px">
+    <figcaption>Figure of HTML Semantics</figcaption>
+</figure><br><br>
+<!-- <audio>
+    <source src="myaudio.ogg" type="audio/ogg">
+    <source src="myaudio.mp3" type="audio/mp3">
+ </audio> This is a best practice to mention source tags inside Media element tags, so that best suited source by browser is picked.--> 
+ <p>
+    The requirements to include documents, videos, interactive videos, or even other web content into a web page directly from external sources.
+    This requirement is fulfilled by iframe tag.
+ </p>
+ <!-- Sandbox Attribute
+This attribute helps the developer to apply extra restrictions for the content which can be embedded into the iframe element. -->
 
-
-
-    </div>
+ <iframe name="myIFrame" width="400px" height="400px" sandbox="allow-same-origin allow-forms"></iframe>
+ <!-- giving no value to sandbox attribute enables all restrictons. otherwise to allow particular restriction need to mention as above-->
     <address>
         Address:
         John
         #231A
         Palace Lane
-        Bangalor
+        Bangalore
     </address> 
+
+    <div>
+        <h4>Common Vulnerabilities in HTML practice that needs to be mitigated:</h4>
+        <ol>
+            <li>
+                HTNL Injection
+                Mitigation -> use of InnerText instead of InnerHTML, code sanitation by removing illegal characters, output encoding by converting special chars in I/O to char entities.
+            </li> 
+            <li>Clickjacking</li>
+            <li>HTML5 attributes and events vulnerabilities</li>
+            <li>Web Storage Vulnerability</li>
+            <li>Reverse Tabnabbing</li>
+        </ol>                                                        
+    </div><hr>
 
     <footer>
         <p>
@@ -217,3 +244,41 @@ frame-name -> Opens a web page in a named frame -->
     <!-- footer tag is to specify copyright, about us and T&C of a page. 1 per page. -->
 </body>
 </html>
+
+<!-- The following are some best practices to be followed while developing a web page or an application using HTML5.
+
+1.In the application, ensure that each web page is having proper document structure with divisions such as <head>, <body>, <header>, <footer>.
+
+2.Ensure that correct DOCTYPE is declared, which is required for the browser to understand the standards of the application used to render it properly.
+
+3.Use a meaningful title for the web pages.
+
+4.Always close the tag even if it is not a container tag.
+
+5.Avoid Inline styles and embedded scripts. Try to include script and style with external files keeping your HTML code clean and neat.
+
+6.Include the script as an external file and place this code at the end portion of the <body> tag.
+
+7.Add the lang attribute to the root element, and keep the value as short as possible.
+
+8.Even though HTML is case insensitive, using lowercase for code is the best practice.
+
+9.Use the most appropriate HTML tag for sectioning the web page. Try to avoid the generic <div> tag and use more meaningful tags such as <article>, <section> and appropriate tags in the web pages.
+
+10.Always use <ul> for designing navigation bars.
+
+11.Avoid the use of the 'type' attribute in the HTML list element and use the corresponding CSS property list-style-type property instead.
+
+12.On embedding elements to the web page, use the alt attribute with a proper description text.
+
+13.Indent nested elements properly.
+
+14.Use appropriate type attribute for Input element inside forms, also ensure the form control is wrapped with <label> element.
+
+15.Use a sandbox attribute along with the iframe element whenever it is needed to embed another webpage into the application.
+
+16.Use rel attribute with a value "noopener  noreferrer" along with hyperlink, to avoid reverse tabnabbing.
+
+17.Consider all the input data as untrusted information and sanitize those inputs before it is used in some logic in the application.
+
+18.Do proper output encoding to avoid chances of injection of malicious code to the application through input elements. -->
