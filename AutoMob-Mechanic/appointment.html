@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment | AutoMob-Mechanic</title>
+</head>
+<body>
+    <header>
+        <a href="./home.html"><h1>AutoMob-Mechanic</h1></a>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a> |</li>
+                <li>&nbsp;<a href="./services.html">Services</a> |</li>
+                <li>&nbsp;<a href="./booking.html">Booking</a> |</li>
+                <li>&nbsp;<a href="mailto:contact@automob.co.in">contact@automob.co.in</a> |</li>
+                <li>&nbsp;<a href="tel:999 999 9999">999 999 9999</a></li>
+            </ul>
+        </nav><hr>
+    </header>
+    <main>
+        <h2>
+            Schedule Your Appointment
+        </h2>
+        <form name="appointmentForm" action="./booking-success.html" method="get" autocomplete="off">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong><label for="appointmentDate">Appointment Date:</label></strong></td>
+                        <td><input type="date" name="appointmentDate" id="appointmentDate" autocomplete="off" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="address">Address:</label></strong></td>
+                        <td><textarea name="address" id="address" cols="30" rows="10" autocomplete="off" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="city">City:</label></strong></td>
+                        <td><input type="text" name="city" id="city" placeholder="Bengaluru, Mumbai" autocomplete="off" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="state">State:</label></strong></td>
+                        <td><input type="text" name="state" id="state" placeholder="Karnataka, Maharashtra" autocomplete="off" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="notify">Send Notification:</label></strong></td>
+                        <td>
+                            <input type="checkbox" name="notify" id="notify" value="email" required>Email
+                            <input type="checkbox" name="notify" id="notify" value="sms">SMS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Book</button>
+        </form>
+
+    </main>
+    <footer>
+        <hr>
+        Copyright &copy; 2023 AutoMob-Mechanic. All Rights Reserved
+    </footer>
+</body>
+</html>
