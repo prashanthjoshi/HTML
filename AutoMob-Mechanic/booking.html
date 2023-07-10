@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | AutoMob-Mechanic</title>
+</head>
+<body>
+    <header>
+        <a href="./home.html"><h1>AutoMob-Mechanic</h1></a>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a> |</li>
+                <li>&nbsp;<a href="./services.html">Services</a> |</li>
+                <li>&nbsp;<a href="./booking.html">Booking</a> |</li>
+                <li>&nbsp;<a href="mailto:contact@automob.co.in">contact@automob.co.in</a> |</li>
+                <li>&nbsp;<a href="tel:999 999 9999">999 999 9999</a></li>
+            </ul>
+        </nav><hr>
+    </header>
+    <main>
+        <h2>Book Your Service</h2>
+        <form name="booking" action="./appointment.html" method="get">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong><label for="name">Name:</label></strong></td>
+                        <td><input type="text" id="name" placeholder="John Daub" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="email">Email Id:</label></strong></td>
+                        <td><input type="email" id="email" placeholder="johndaub@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="phone">Phone Number:</label></strong></td>
+                        <td>
+                            <span>
+                            <select name="code" id="code" required>
+                                <option value="code" selected disabled>code</option>
+                                <option value="+91">+91</option>
+                                <option value="+64">+64</option>
+                                <option value="+231">+231</option>
+                                <option value="+234">+234</option>
+                            </select>
+                            </span>
+                            <input type="text" name="phone" id="phone" required minlength="10" maxlength="10" placeholder="9007892345">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="serviceType">Select Service:</label></strong></td>
+                        <td>
+                            <select name="serviceType" id="serviceType" required>
+                                <option value="preventive-maintenance-service">Preventive Maintenance Service</option>
+                                <option value="body-repair-service">Body Repair Service</option>
+                                <option value="car-wash-service">Car Wash Service</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="carMake">Car Make:</label></strong></td>
+                        <td>
+                            <input list="carMakes" name="carMake" id="carMake" placeholder="Suzuki, Toyota" required>
+                            <datalist id="carMakes">
+                                <option value="Mahindra"></option>
+                                <option value="Honda"></option>
+                                <option value="Hyundai"></option>
+                                <option value="Ford"></option>
+                                <option value="Toyota"></option>
+                                <option value="Nissan"></option>
+                                </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="carModel">Car Model:</label></strong></td>
+                        <td><input type="text" name="carModel" id="carModel" placeholder="Alto, Innova" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="fuelType" required>Fuel Type:</label></strong></td>
+                        <td>
+                            <input type="radio" name="fuelType" id="fuelType" value="petrol" required>Petrol
+                            <input type="radio" name="fuelType" id="fuelType" value="diesel">Diesel
+                            <input type="radio" name="fuelType" id="fuelType" value="lpg">LPG
+                            <input type="radio" name="fuelType" id="fuelType" value="others">Others
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><strong><label for="km">Kilometers ran:</label></strong></td>
+                        <td><input type="number" name="km" id="km" placeholder="km" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Schedule an Appointment</button>
+        </form>
+
+    </main>
+    <footer>
+        <hr>
+        Copyright &copy; 2023 AutoMob-Mechanic. All Rights Reserved
+    </footer>
+</body>
+</html>
